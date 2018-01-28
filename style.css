@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1503197979108-c824168d51a8?ixlib=rb-0.3.5&s=80035315ee8c4b1dca716e4d2201f13c&auto=format&fit=crop&w=891&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Lobster Two;
+}
+.voiceinator {
+    padding: 1.7rem;
+    width: 30rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    width: calc(100% + 2.5rem);
+    margin-top: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #004445;
+}
+.voiceinator label {
+    font-size: 20px;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border: 0;
+    font-size: 1.5rem;
+    outline: 0;
+}
+textarea {
+    height: 10rem;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    border: 2px dotted #004445 !important;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-top-left-radius: 100px 10px;
+    border-top-right-radius: 10px 100px;
+    border-bottom-left-radius: 10px 100px;
+    border-bottom-right-radius: 110px 10px;
+}
+
+.voiceinator button {
+    width: 49%;
+    float:left;
+    margin-bottom: 0;
+    font-size: 2rem;
+    cursor:pointer;
+    position: relative;
+    padding: 10px 10px;
+    color: #021C1E;
+    font-size: 21px;
+    font-weight: 700;
+    border: 2px dotted #021C1E;
+    background: transparent;
+    transition: all .5s ease-in-out;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+    border-top-left-radius: 100px 10px;
+    border-top-right-radius: 10px 100px;
+    border-bottom-left-radius: 10px 100px;
+    border-bottom-right-radius: 110px 10px;
+  }
+  
+  .voiceinator button:hover {
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  }
+  
+  .voiceinator button:nth-of-type(1) {
+    margin-right: 2%;
+  }
+
+  .slider {
+      -webkit-appearance: none; /*override default CSS style */
+      background: #004445;
+      height: 5px;
+      border-radius: 5px;
+      outline: none;
+      opacity: 0.8;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+  }
+  .slider:hover {
+      opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: red;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  #voices {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      margin: auto;
+      height: 50px;
+      width: 400px;
+      border: 2px dotted #004445;
+      border-radius: 3px;
+      background: transparent;
+      font-size: 20px;
+      font-family: Lobster Two;
+      box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+  }
+  option {
+    position: absolute;
+    z-index: 4;
+    right: 1.5em;
+    top: 1.6em;
+    color: #004445; 
+  }
